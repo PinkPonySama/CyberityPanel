@@ -35,7 +35,6 @@ function getDatePass() {
             userMonth += 1;
             let validYear = getValidFullDate.getFullYear();
             let validFullDate = `${validDay}.${validMonth}.${validYear}`;
-			alert(nowMonth + ' ' + userMonth + ' ' + nowDay + ' ' + userDay);
 			if (nowMonth == userMonth && nowDay == userDay) {
 				alert(`Паспорт действителен\nc ${userDay}.${userMonth}.${getCardValibLastYear}\nдо ${validDay}.${validMonth}.${validYear}( ${validYear}-${validMonth}-${validDay} )\nДЕНЬ РОЖДЕНИЯ СЕГОДНЯ!\n\nВозраст: ${userAge}\nДата рождения: ${userDay}.${userMonth}.${userYear}\nДата сегодня: ${nowDay}.${nowMonth}.${nowYear}`);
 			} else {
