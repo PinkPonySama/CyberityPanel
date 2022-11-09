@@ -5,9 +5,15 @@ function getDatePass() {
 	let nowMonth = fullNowDate.getMonth();
 	nowMonth += 1;
 	let nowYear = fullNowDate.getFullYear();
-	let userDay = fullUserDate.split('.')[0];
-	let userMonth = fullUserDate.split('.')[1];
-	let userYear = fullUserDate.split('.')[2];
+	if (fullUserDate.includes('.') == true) {
+		var userDay = fullUserDate.split('.')[0];
+		var userMonth = fullUserDate.split('.')[1];
+		var userYear = fullUserDate.split('.')[2];
+	} else if (fullUserDate.includes('-') == true) {
+		var userDay = fullUserDate.split('-')[2];
+		var userMonth = fullUserDate.split('-')[1];
+		var userYear = fullUserDate.split('-')[0];
+	}
 	let userAge = nowYear - userYear;
 	if (userDay > 31 || userMonth > 12 || userYear >= nowYear)  {
 		alert('Убедитесь в правильности написания даты');
