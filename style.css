@@ -77,21 +77,31 @@ body {
     color: #e0e0e0;
 }
 
+.conteiner {
+    width: 300px;
+    padding: 32px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+}
+
+.getCardValibLastYear {
+    position: relative;
+}
+
+.getCardValidYear {
+    position: relative;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.getCardValibLastYear,
+.getCardValidYear,
+.user_age, 
+.date_now {
+    margin-bottom: 27px;
+}
 
 
 
