@@ -12,12 +12,12 @@
 </head>
 <body> 
 
-  <form class="form">
+  <form class="form" onsubmit="getDatePass(); return false;">
     
     <h1 class="form_title">Калькулятор<br>срока действия</h1>
 
-    <div class="form_group">
-      <input type = "text" class="form_input" id = "input_date" placeholder=" ">
+    <div class="form_group" >
+      <input type = "text" autocomplete="off" class="form_input" id = "input_date" placeholder=" ">
       <label class="form_label">Дата рождения</label>
     </div>
 
